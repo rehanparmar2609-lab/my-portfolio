@@ -11,7 +11,7 @@
   <!-- Typed.js -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-  <!-- AOS Animation -->
+  <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
   <!-- Font -->
@@ -21,14 +21,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
       background: radial-gradient(circle at top, #0f0f0f, #0a0a0a);
       color: #eaeaea;
-      scroll-behavior: smooth;
     }
 
+    /* NAVBAR */
     nav {
       position: fixed;
       width: 100%;
@@ -54,6 +59,7 @@
       color: #ff4d5a;
     }
 
+    /* HERO */
     .hero {
       display: flex;
       align-items: center;
@@ -103,7 +109,7 @@
       box-shadow: 0 10px 30px rgba(255,77,90,0.4);
     }
 
-    /* SOCIAL ICONS */
+    /* SOCIAL */
     .social-icons {
       margin-top: 25px;
       font-size: 22px;
@@ -127,6 +133,7 @@
       margin-right: 40px;
     }
 
+    /* SECTIONS */
     .section {
       padding: 80px;
     }
@@ -136,6 +143,7 @@
       font-weight: 600;
     }
 
+    /* CARDS */
     .card {
       background: rgba(255,255,255,0.05);
       border: 1px solid rgba(255,255,255,0.1);
@@ -150,25 +158,61 @@
       box-shadow: 0 10px 40px rgba(255,77,90,0.2);
     }
 
+    /* MOBILE PERFECT */
     @media(max-width: 768px){
+
+      nav {
+        padding: 15px 20px;
+        justify-content: center;
+      }
+
+      nav a {
+        margin-left: 15px;
+        font-size: 13px;
+      }
+
       .hero {
         flex-direction: column;
         text-align: center;
-        padding: 60px 20px;
+        padding: 80px 20px 40px;
+      }
+
+      .hero-text h1 {
+        font-size: 2rem;
+      }
+
+      .hero-text p {
+        font-size: 14px;
+      }
+
+      .btn-main {
+        padding: 10px 20px;
+        font-size: 14px;
       }
 
       .hero-img {
         justify-content: center;
+        margin-top: 30px;
       }
 
       .hero-img img {
+        width: 200px;
         margin-right: 0;
       }
 
       .section {
         padding: 40px 20px;
       }
+
+      .section h2 {
+        font-size: 1.5rem;
+      }
+
+      .card {
+        text-align: center;
+      }
     }
+
   </style>
 </head>
 
@@ -195,12 +239,10 @@
 
     <a href="https://wa.me/919104063798" target="_blank" class="btn-main">Contact Me</a>
 
-    <!-- SOCIAL ICONS -->
     <div class="social-icons">
       <a href="https://github.com/rehanparmar2609-lab" target="_blank">
         <i class="fab fa-github"></i>
       </a>
-
       <a href="https://www.linkedin.com/in/rehan-parmar-456964378/" target="_blank">
         <i class="fab fa-linkedin"></i>
       </a>
