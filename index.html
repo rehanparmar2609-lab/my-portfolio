@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rehan Parmar | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top, #0f0f0f, #0a0a0a);
+      color: #eaeaea;
+      scroll-behavior: smooth;
+    }
+
+    /* NAVBAR */
+    nav {
+      position: fixed;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px 60px;
+      backdrop-filter: blur(12px);
+      background: rgba(0,0,0,0.4);
+      z-index: 1000;
+    }
+
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #ffffff;
+      opacity: 0.8;
+      transition: 0.3s;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      opacity: 1;
+      color: #ff4d5a;
+    }
+
+    /* HERO */
+    .hero {
+  display: flex;
+  align-items: center;
+  padding: 100px 80px;
+  min-height: 100vh;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-img {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+    .hero-text h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    #typing {
+      color: #ff4d5a;
+      text-shadow: 0 0 10px rgba(255,77,90,0.6);
+    }
+
+    .hero-text p {
+      margin: 20px 0;
+      color: #aaa;
+      line-height: 1.6;
+    }
+
+    .btn-main {
+      background: #ff4d5a;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      transition: 0.3s;
+    }
+
+    .btn-main:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(255,77,90,0.4);
+    }
+
+    .hero-img img {
+      width: 260px;
+      border-radius: 50%;
+      box-shadow: 0 0 60px rgba(255,77,90,0.2);
+    }
+
+    /* SECTION */
+    .section {
+      padding: 80px;
+      
+    }
+
+    .section h2 {
+      margin-bottom: 40px;
+      font-weight: 600;
+      
+    }
+
+    /* CARDS */
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      transition: 0.3s;
+      color: white;
+    }
+
+    .card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 10px 40px rgba(255,77,90,0.2);
+    }
+
+    /* MOBILE */
+    @media(max-width: 768px){
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 20px;
+      }
+
+      .section {
+        padding: 40px 20px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="#home">Home</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-text" data-aos="fade-right">
+    <h3>Hi, I'm</h3>
+    <h1>
+      Parmar Rehan<br>
+      <span id="typing"></span>
+    </h1>
+
+    <p>
+      I create modern websites using HTML, design tools, and AI-assisted workflows.
+      Currently improving my development skills and learning Python.
+    </p>
+
+    <a href="https://wa.me/919104063798" target="_blank" class="btn-main">Contact Me</a>
+  </div>
+
+  <div class="hero-img" data-aos="fade-right">
+    <img src="profile.jpg" alt="Profile Image">
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <h2 data-aos="fade-up">Skills</h2>
+  <div class="row g-4">
+    <div class="col-md-4" data-aos="zoom-in">
+      <div class="card p-4">
+        <h5>Frontend</h5>
+        <p>HTML, UI Design</p>
+      </div>
+    </div>
+
+    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+      <div class="card p-4">
+        <h5>Tools</h5>
+        <p>VS Code, Canva, GitHub</p>
+      </div>
+    </div>
+
+    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+      <div class="card p-4">
+        <h5>Learning</h5>
+        <p>Python, Advanced Web Dev</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2 data-aos="fade-up">Projects</h2>
+
+  <div class="card p-4" data-aos="fade-up">
+    <h4>Essential Student’s Hub</h4>
+    <p>
+      A platform providing assignments, lab manuals, and coding help with instant WhatsApp integration.
+    </p>
+  </div>
+</section>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+
+  var typed = new Typed("#typing", {
+    strings: [
+      "Web Developer",
+      "Frontend Learner",
+      "Freelancer in Progress",
+      "Future Software Developer"
+    ],
+    typeSpeed: 50,
+    backSpeed: 30,
+    loop: true
+  });
+</script>
+
+</body>
+</html>
